@@ -10,3 +10,5 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE='JPN';
 SELECT CITY, STATE FROM STATION;
 SELECT DISTINCT CITY FROM STATION WHERE MOD(ID,2)=0;
 select count(city) - count(distinct city) from station;
+select CITY, length(CITY)from station order by length(CITY), city limit 1; 
+select CITY, length(CITY)from station order by length(CITY) desc, city limit 1;
